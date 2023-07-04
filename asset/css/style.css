@@ -189,7 +189,7 @@ a:hover {
   text-align: center;
   margin: 0 auto;
   padding: 60px 0 60px;
-  background-color: #f6f6f6;
+  /* background-color: #f6f6f6; */
 }
 .menu h2 {
   margin-bottom: 20px;
@@ -213,10 +213,11 @@ a:hover {
 .menu .food-menu-item .food-desc {
   display: flex;
   justify-content: space-between;
-  margin-top: 30px;
+  margin-top: 25px;
   text-transform: capitalize;
-  font-size: 17px;
+  white-space: nowrap;
 }
 .menu .food-desc .food-price-tag {
+  font-size: 17px;
   font-weight: 700;
 }
