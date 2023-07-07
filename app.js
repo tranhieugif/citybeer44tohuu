@@ -7,6 +7,7 @@ $(document).ready(function () {
     draggable: false,
     autoplay: true,
     autoplaySpeed: 3000,
+    pauseOnHover: true,
     cssEase: "linear",
     prevArrow: `<button type='button' class='slick-prev slick-arrow ti-angle-left'></button>`,
     nextArrow: `<button type='button' class='slick-next slick-arrow ti-angle-right'></button>`,

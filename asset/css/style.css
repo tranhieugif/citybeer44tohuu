@@ -25,6 +25,7 @@ a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
+  transition: all 0.5s ease-in-out;
 }
 a:hover {
   color: yellow;
@@ -36,7 +37,7 @@ a:hover {
   font-weight: 700;
 }
 /* ============ Silder ============= */
-.slider {
+.Home-page {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
@@ -119,7 +120,7 @@ a:hover {
 }
 
 /* ============ Heading title ============= */
-.slider .heading-title {
+.Home-page .heading-title {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -127,7 +128,7 @@ a:hover {
   width: 100%;
   height: calc(100vh - 116px);
 }
-.slider .title {
+.heading-title .title {
   font-size: 8.2rem;
   letter-spacing: 3px;
   white-space: nowrap;
@@ -184,16 +185,16 @@ a:hover {
 }
 
 /* ============ Menu content ============= */
-.menu {
+.menu-area {
   text-align: center;
   margin: 0 auto;
   padding: 40px 0 60px;
 }
-.menu h2 {
+.menu-area h2 {
   margin-bottom: 20px;
 }
 /* slider design */
-.menu .food-menu-list {
+.menu-area .food-menu-list {
   margin-top: 25px;
   padding-bottom: 40px;
 }
@@ -263,4 +264,32 @@ a:hover {
 }
 .slick-dots .slick-active button {
   background-color: var(--primary-color);
+}
+/* ============ Album Area ============= */
+.album-area {
+  text-align: center;
+  margin: 0 auto;
+  padding: 40px 0 60px;
+}
+.about-area h2 {
+  margin-top: 20px;
+}
+.album-area .img-album {
+  margin-top: 30px;
+  display: flex;
+  flex: 1;
+  flex-wrap: wrap;
+}
+.img-album a {
+  overflow: hidden;
+}
+.img-album img {
+  display: block;
+  width: 290px;
+  height: 228px;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.img-album img:hover {
+  transform: scale(1.2);
 }
