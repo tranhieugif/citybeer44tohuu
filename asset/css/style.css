@@ -146,7 +146,7 @@ a:hover {
 }
 /* ============ About area ============= */
 .about-area {
-  background: rgba(0, 0, 0, 0) url("/asset/img/about_bg.png") no-repeat scroll
+  background: rgba(0, 0, 0, 0) url("/asset/img/about-bg.png") no-repeat scroll
     center bottom / contain;
   font-size: 1.5rem;
   padding: 60px 0;
