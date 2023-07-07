@@ -148,14 +148,24 @@ a:hover {
 .about-area {
   /* background: rgba(0, 0, 0, 0) url("/asset/img/thuviendohoa.vn_64.jpg")
     no-repeat scroll center bottom / contain; */
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/about-bg.png);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: contain;
+  background-attachment: scroll;
   font-size: 1.5rem;
   padding: 60px 0;
   position: relative;
 }
-/* .about-area::after {
-  background: rgba(0, 0, 0, 0)
+.about-area::after {
+  /* background: rgba(0, 0, 0, 0)
     url("http://hailuasaigon-restaurant.com/app/web/themes/5/skin/img/icons/tri-promo-bottom-white.png")
-    repeat scroll 0 0;
+    repeat scroll 0 0; */
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/tri-promo-bottom-white.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
   content: "";
   position: absolute;
   left: 0;
@@ -164,10 +174,10 @@ a:hover {
   width: 100%;
   transform: rotateX(180deg);
   z-index: 9;
-} */
+}
 .about-area .content {
   text-align: center;
-  margin: 40px auto 0;
+  margin: 40px auto 100px;
 }
 /* ============ About title ============= */
 
