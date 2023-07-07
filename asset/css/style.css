@@ -146,14 +146,16 @@ a:hover {
 }
 /* ============ About area ============= */
 .about-area {
-  background: rgba(0, 0, 0, 0) url("/asset/img/about-bg.png") no-repeat scroll
-    center bottom / contain;
+  background: rgba(0, 0, 0, 0)
+    url("http://hailuasaigon-restaurant.com/app/web/themes/5/skin/img/about/home_three_about_bg.png")
+    no-repeat scroll center bottom / contain;
   font-size: 1.5rem;
   padding: 60px 0;
   position: relative;
 }
 .about-area::after {
-  background: rgba(0, 0, 0, 0) url("/asset/img/tri-promo-bottom-white.png")
+  background: rgba(0, 0, 0, 0)
+    url("http://hailuasaigon-restaurant.com/app/web/themes/5/skin/img/icons/tri-promo-bottom-white.png")
     repeat scroll 0 0;
   content: "";
   position: absolute;
