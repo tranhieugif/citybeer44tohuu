@@ -103,7 +103,7 @@ a:hover {
   position: absolute;
   width: 200px;
   height: 200px;
-  top: -50px;
+  top: -70px;
 }
 .navbar ul {
   display: flex;
@@ -177,7 +177,7 @@ a:hover {
 }
 .about-area .content {
   text-align: center;
-  margin: 40px auto 100px;
+  margin: 40px auto 0px;
 }
 /* ============ About title ============= */
 
@@ -210,6 +210,10 @@ a:hover {
 }
 .about-content p {
   font-weight: 700;
+}
+/* ============ About us video ============= */
+.about-area .about-us-video {
+  margin-top: 40px;
 }
 
 /* ============ Menu content ============= */
