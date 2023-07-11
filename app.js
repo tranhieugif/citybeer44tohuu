@@ -29,7 +29,6 @@ var sticky = navbar.offsetTop;
 function myFunction() {
   if (window.scrollY >= sticky) {
     navbar.classList.add("sticky");
-    console.log(window.scrollY);
   } else {
     navbar.classList.remove("sticky");
   }

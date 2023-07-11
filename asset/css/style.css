@@ -28,43 +28,18 @@ a {
   text-transform: uppercase;
   transition: all 0.5s ease-in-out;
 }
-a:hover {
-  color: yellow;
-}
 .title {
   font-size: 6rem;
   font-family: "Dancing Script", sans-serif;
   color: var(--primary-color);
   font-weight: 700;
 }
-/* ============ Silder ============= */
-.Home-page {
-  display: flex;
-  flex-direction: column;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/trangchủ/bg-Home.png);
-  background-size: cover;
-  height: 100vh;
-  transform: translateY(-116px);
-}
-
-/* ============ Top area ============= */
-
-.Home-page .content {
-  position: relative;
-  margin: 0 auto;
-}
-.header1 .separate {
-  height: 1px;
-  background-color: #ccc;
-}
-/* ============ Top bar ============= */
+/* ============ Header ============= */
 .header1 {
   position: relative;
   z-index: 100;
 }
-
-.header1 .top-bar {
+.top-bar .content {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -95,7 +70,10 @@ a:hover {
   background-color: #fff;
   color: var(--primary-color);
 }
-
+.header1 .separate {
+  height: 1px;
+  background-color: #ccc;
+}
 /* ============ Navbar ============= */
 .navbar {
   transition: all 0.5s ease-in-out;
@@ -109,7 +87,25 @@ a:hover {
   position: fixed;
   top: 0;
   width: 100%;
-  background-color: var(--primary-color);
+  height: 80px;
+  background-color: #fff;
+  box-shadow: 0px 2px 10px #7b7878;
+}
+.sticky a {
+  color: #000;
+}
+.sticky::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/tri-promo-bottom-white.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  height: 7px;
+  width: 100%;
+  z-index: 100;
 }
 .navbar img {
   width: 200px;
@@ -118,18 +114,33 @@ a:hover {
   display: flex;
 }
 .navbar li {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   padding: 30px 15px;
   font-weight: 700;
   letter-spacing: 2px;
   cursor: pointer;
 }
 .navbar li:hover a {
-  color: yellow;
+  color: var(--primary-color);
+}
+
+/* ============ Home page ============= */
+.Home-page {
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/trangchủ/bg-Home.png);
+  background-size: cover;
+  height: 100vh;
+  transform: translateY(-116px);
+}
+.Home-page .content {
+  position: relative;
+  margin: 0 auto;
 }
 
 /* ============ Heading title ============= */
-.heading-title {
+.heading-title .content {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -155,8 +166,6 @@ a:hover {
 }
 /* ============ About area ============= */
 .about-area {
-  /* background: rgba(0, 0, 0, 0) url("/asset/img/thuviendohoa.vn_64.jpg")
-    no-repeat scroll center bottom / contain; */
   background-color: rgba(0, 0, 0, 0);
   background-image: url(../img/about-bg.png);
   background-repeat: no-repeat;
@@ -168,9 +177,6 @@ a:hover {
   position: relative;
 }
 .about-area::after {
-  /* background: rgba(0, 0, 0, 0)
-    url("http://hailuasaigon-restaurant.com/app/web/themes/5/skin/img/icons/tri-promo-bottom-white.png")
-    repeat scroll 0 0; */
   background-color: rgba(0, 0, 0, 0);
   background-image: url(../img/tri-promo-bottom-white.png);
   background-repeat: repeat;
@@ -228,7 +234,6 @@ a:hover {
 /* ============ Menu content ============= */
 .menu-area {
   text-align: center;
-  margin: 0 auto;
   padding: 40px 0 60px;
 }
 .menu-area h2 {
@@ -309,7 +314,6 @@ a:hover {
 /* ============ Album Area ============= */
 .album-area {
   text-align: center;
-  margin: 0 auto;
   padding: 40px 0 60px;
 }
 .about-area h2 {
