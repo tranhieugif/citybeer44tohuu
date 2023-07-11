@@ -173,6 +173,7 @@ a {
   background-size: contain;
   background-attachment: scroll;
   font-size: 1.5rem;
+  margin-top: -116px;
   padding: 60px 0;
   position: relative;
 }
@@ -184,7 +185,7 @@ a {
   content: "";
   position: absolute;
   left: 0;
-  bottom: -1px;
+  bottom: 0;
   height: 7px;
   width: 100%;
   transform: rotateX(180deg);
@@ -234,6 +235,7 @@ a {
 /* ============ Menu content ============= */
 .menu-area {
   text-align: center;
+  margin-top: 30px;
   padding: 40px 0 60px;
 }
 .menu-area h2 {
