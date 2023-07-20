@@ -320,7 +320,8 @@
             <h2>Bộ Sưu Tập</h2>
             <img src="./asset/img/img-deco.png" alt="" />
           </div>
-          <div class="img-album">
+          <!-- Album -->
+          <div id="imageContainer" class="img-album">
             <a href="#!"><img src="./asset/img/bst/1.jpg" alt="" /></a>
             <a href="#!"><img src="./asset/img/bst/2.jpg" alt="" /></a>
             <a href="#!"><img src="./asset/img/bst/3.jpg" alt="" /></a>
@@ -329,35 +330,38 @@
             <a href="#!"><img src="./asset/img/bst/6.jpg" alt="" /></a>
             <a href="#!"><img src="./asset/img/bst/7.jpg" alt="" /></a>
             <a href="#!"><img src="./asset/img/bst/8.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/9.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/10.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/11.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/12.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/13.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/14.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/15.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/16.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/17.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/18.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/19.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/20.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/21.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/22.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/23.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/24.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/25.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/26.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/27.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/28.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/29.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/30.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/31.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/32.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/33.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/34.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/35.jpg" alt="" /></a>
-            <a href="#!"><img src="./asset/img/bst/36.jpg" alt="" /></a>
+            <div class="hidden-imgs">
+              <a href="#!"><img src="./asset/img/bst/9.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/10.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/11.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/12.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/13.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/14.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/15.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/16.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/17.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/18.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/19.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/20.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/21.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/22.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/23.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/24.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/25.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/26.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/27.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/28.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/29.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/30.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/31.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/32.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/33.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/34.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/35.jpg" alt="" /></a>
+              <a href="#!"><img src="./asset/img/bst/36.jpg" alt="" /></a>
+            </div>
           </div>
+          <button id="viewMoreButton">Xem thêm</button>
         </div>
       </section>
       <section class="event-area">
@@ -366,6 +370,7 @@
             <h2>Sự Kiện</h2>
             <img src="./asset/img/img-deco.png" alt="" />
           </div>
+          <!-- Event list -->
           <div class="event-lists">
             <div class="event-item">
               <img src="./asset/img/event/img/Phong_Lam.jpg" alt="Phong_Lam" />
@@ -563,6 +568,14 @@
           </div>
         </div>
       </section>
+      <section class="recruit-erea">
+        <div class="content">
+          <div class="title">
+            <h2>Tuyển Dụng</h2>
+            <img src="./asset/img/img-deco.png" alt="" />
+          </div>
+        </div>
+      </section>
     </main>
     <!-- Slick slider -->
     <script
@@ -578,5 +591,6 @@
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
     <script src="./app.js"></script>
+    <script src="./loadImg.js"></script>
   </body>
 </html>
