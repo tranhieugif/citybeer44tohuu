@@ -430,6 +430,9 @@ a {
   padding-bottom: 20px;
   border-bottom: 1px solid #ccc;
 }
+.recruit-list .recruit-item:last-child {
+  border-bottom: none;
+}
 
 .recruit-item img {
   width: 400px;
