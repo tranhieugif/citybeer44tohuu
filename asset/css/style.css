@@ -26,7 +26,6 @@ a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
-  transition: all 0.5s ease-in-out;
 }
 .title {
   font-size: 6rem;
@@ -161,6 +160,7 @@ a {
 .sticky a {
   color: #000;
 }
+
 .sticky::after {
   background-color: rgba(0, 0, 0, 0);
   background-image: url(../img/tri-promo-bottom-white.png);
@@ -189,6 +189,7 @@ a {
 }
 .navbar li:hover a {
   color: var(--primary-color);
+  transition: all 0.3s ease-in-out;
 }
 
 /* ============ Home page ============= */
@@ -417,4 +418,45 @@ a {
   margin: 15px 0;
   text-align: justify;
   font-size: 1.4rem;
+}
+/* ============ Recruit Area ============= */
+.recruit-list {
+  margin-top: 60px;
+}
+.recruit-list .recruit-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ccc;
+}
+
+.recruit-item img {
+  width: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.recruit-content {
+  width: 550px;
+  font-size: 1.5rem;
+}
+.recruit-content h3 {
+  margin: 15px 0 20px;
+  /* margin-bottom: 20px; */
+  font-weight: 700;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+}
+.recruit-content p {
+  color: #ccc;
+}
+.recruit-content .recruit-desc {
+  margin: 15px 0;
+  color: #000;
+  line-height: 1.7;
+}
+.recruit-content a {
+  color: red;
+  text-decoration: underline;
+  text-transform: capitalize;
 }
