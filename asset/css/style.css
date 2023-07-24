@@ -197,7 +197,7 @@ a {
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../img/trangchủ/bg-Home.png);
+    url(../img/trangchủ/bg-Home.jpg);
   background-size: cover;
   height: 100vh;
   transform: translateY(-116px);
@@ -462,4 +462,95 @@ a {
   color: red;
   text-decoration: underline;
   text-transform: capitalize;
+}
+/* ============ Footer ============= */
+.footer {
+  background-image: url(../img/footer.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #cacaca;
+  letter-spacing: 1px;
+  position: relative;
+  font-size: 1.5rem;
+}
+.footer::after {
+  background-color: rgba(0, 0, 0, 0);
+  background-image: url(../img/tri-promo-bottom-white.png);
+  background-repeat: repeat;
+  background-attachment: scroll;
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 7px;
+  width: 100%;
+  z-index: 9;
+}
+.footer a {
+  color: var(--primary-color);
+  text-transform: lowercase;
+}
+.footer a:hover {
+  color: #fff;
+}
+
+.footer-bg::after {
+  background-color: #000;
+  background-image: url(../img/pattarn.png);
+  content: "";
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0.8;
+  width: 100%;
+}
+.footer .content {
+  position: relative;
+  z-index: 1;
+}
+.footer .footer-top {
+  padding: 100px 0;
+}
+.footer-top .footer-logo {
+  text-align: center;
+  margin-bottom: 50px;
+}
+.footer-top .footer-address {
+  display: flex;
+  text-align: center;
+  margin-bottom: 65px;
+}
+.footer-address .contact,
+.footer-address .map {
+  width: 50%;
+  padding: 0 15px;
+}
+.footer-address .contact {
+  line-height: 1.7;
+}
+.contact p {
+  margin-bottom: 10px;
+}
+.footer-social ul {
+  display: flex;
+  justify-content: center;
+}
+.footer-social li {
+  width: 50px;
+  font-size: 2.5rem;
+}
+.footer-social a {
+  color: #cacaca;
+}
+.footer-social a:hover {
+  color: var(--primary-color);
+}
+.footer .row {
+  overflow: hidden;
+  padding: 40px 0;
+}
+.row .footer-copyright {
+  float: right;
 }
