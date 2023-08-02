@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>City Beer</title>
+        <!-- Font Lato -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300;1,400;1,700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Font Dancing Cript -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <!-- Reset css -->
+        <link rel="stylesheet" href="./asset/css/reset.css" />
+        <!-- slider -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+        />
+        <!-- Style css -->
+        <link rel="stylesheet" href="./asset/css/style.css" />
+        <!-- Icons -->
+        <link
+            rel="stylesheet"
+            href="./asset/themify-icons-font/themify-icons/themify-icons.css"
+        />
+    </head>
+    <body>
+        <header class="header1 booking">
+            <!-- Top bar -->
+            <div class="top-bar">
+                <div class="content">
+                    <div class="cell-number">
+                        <i class="ti-mobile"></i>
+                        <span>Điện Thoại: 076 775 7575</span>
+                    </div>
+                    <div class="social">
+                        <a class="social-link" href="#!"
+                            ><i class="ti-facebook"></i
+                        ></a>
+                        <a class="social-link" href="#!"
+                            ><i class="ti-twitter"></i
+                        ></a>
+                        <a class="social-link" href="#!"
+                            ><i class="ti-youtube"></i
+                        ></a>
+                    </div>
+                </div>
+            </div>
+            <div class="separate"></div>
+            <!-- Navbar -->
+            <nav id="navbar" class="navbar">
+                <div class="content">
+                    <!-- Logo -->
+                    <a class="logo" href="#!">
+                        <img
+                            src="./asset/img/trangchủ/logo.png"
+                            alt="City Beer"
+                        />
+                    </a>
+                    <!-- Navigation -->
+                    <ul>
+                        <li>
+                            <a href="#!">Trang Chủ</a>
+                        </li>
+                        <li>
+                            <a href="#!">Giới Thiệu</a>
+                        </li>
+                        <li>
+                            <a href="#!">Thực Đơn</a>
+                        </li>
+                        <li>
+                            <a href="#!">Bộ Sưu Tập</a>
+                        </li>
+                        <li>
+                            <a href="#!">Sự Kiện</a>
+                        </li>
+                        <li>
+                            <a href="#!">Tuyển Dụng</a>
+                        </li>
+                        <li>
+                            <a href="#!">Liên Hệ</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main class="main" id="booking">
+            <div class="content">
+                <h1 class="title">Đặt Bàn Ngay</h1>
+                <div class="row row-booking">
+                    <!-- <div class="payment-info"> -->
+                    <span class="info-title">Thông tin đặt bàn</span>
+                    <form action="#!" class="booking-info">
+                        <!-- customer-details -->
+                        <div class="customer-details">
+                            <label
+                                for="customer-name"
+                                class="customer-name-lable"
+                                >Họ và tên *</label
+                            >
+                            <input
+                                type="text"
+                                name="customer-name"
+                                id="customer-name"
+                                class="form-control"
+                                placeholder="Nhập họ và tên của bạn"
+                                required
+                            />
+
+                            <label
+                                for="customer-address"
+                                class="customer-address-lable"
+                            >
+                                Ngày và giờ *
+                            </label>
+                            <input
+                                type="text"
+                                name="customer-address"
+                                id="customer-address"
+                                class="form-control"
+                                placeholder="Nhập ngày và giờ bạn muốn đặt"
+                                required
+                            />
+
+                            <div class="customer-phone-address-wrap">
+                                <div class="customer-phone-wrap">
+                                    <label
+                                        for="customer-phone"
+                                        class="customer-phone-lable"
+                                        >Số điện thoại *
+                                    </label>
+                                    <input
+                                        type="text"
+                                        name="customer-phone"
+                                        id="customer-phone"
+                                        class="form-control"
+                                        placeholder="Nhập số điện thoại của bạn"
+                                        required
+                                    />
+                                </div>
+                                <div class="customer-email-wrap">
+                                    <label
+                                        for="customer-email"
+                                        class="customer-email-lable"
+                                    >
+                                        Địa chỉ email *
+                                    </label>
+                                    <input
+                                        type="email"
+                                        name="customer-email"
+                                        id="customer-email"
+                                        class="form-control"
+                                        placeholder="Nhập email của bạn"
+                                        required
+                                    />
+                                </div>
+                            </div>
+                            <label
+                                for="customer-note"
+                                class="customer-note-lable"
+                            >
+                                Ghi chú đặt bàn (tuỳ chọn)
+                            </label>
+                            <input
+                                type="text"
+                                name="customer-note"
+                                id="customer-note"
+                                class="form-control"
+                                placeholder="Ghi chú về yêu cầu đặt bàn của bạn"
+                            />
+                            <a href="./index.html" class="btn back-to-order"
+                                ><i class="ti-arrow-left"></i> Quay lại trang
+                                chủ</a
+                            >
+                            <button class="booking-action">Đặt Bàn</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <footer class="footer footer-booking">
+            <div class="footer-bg"></div>
+            <div class="content">
+                <!-- footer-top -->
+                <div class="footer-top">
+                    <!-- footer-address -->
+                    <div class="footer-address">
+                        <div class="contact">
+                            <p>Địa chỉ: 44 Tố Hữu, P.Xuân Phú, TP.Huế</p>
+                            <p>Mở cửa: 14h-2h (Sáng hôm sau)</p>
+                            <p>
+                                Hotline:
+                                <a href="tel:0767.25.39.39">0767.25.39.39</a>
+                            </p>
+                            <p>
+                                Điện Thoại:
+                                <a href="tel:0767.75.75.75">0767.75.75.75</a>
+                            </p>
+                            <p>
+                                Website:
+                                <a
+                                    href="https://tranhieugif.github.io/citybeer44tohuu/"
+                                    >https://tranhieugif.github.io/citybeer44tohuu/</a
+                                >
+                            </p>
+                        </div>
+                        <div class="map">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.2352476788615!2d107.6023003739021!3d16.46362162876155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a181ef225a39%3A0xbd35406ef47fbd55!2sCity%20beer!5e0!3m2!1svi!2s!4v1690201298878!5m2!1svi!2s"
+                                width="540"
+                                height="250"
+                                style="border: 0"
+                                allowfullscreen=""
+                                loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                            ></iframe>
+                        </div>
+                    </div>
+                    <!-- footer-social -->
+                    <div class="footer-social">
+                        <ul>
+                            <li>
+                                <a class="social-link" href="#!"
+                                    ><i class="ti-facebook"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#!"
+                                    ><i class="ti-twitter"></i
+                                ></a>
+                            </li>
+                            <li>
+                                <a class="social-link" href="#!"
+                                    ><i class="ti-youtube"></i
+                                ></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="footer-copyright">
+                        <p>
+                            © 2023 CityBeer
+                            <a
+                                href="https://tranhieugif.github.io/citybeer44tohuu/"
+                                >citybeer44tohuu</a
+                            >
+                            All Right Reserved.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
