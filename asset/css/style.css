@@ -8,6 +8,7 @@
 html,
 body {
     scroll-behavior: smooth;
+    transition: scroll 0.5s;
 }
 html {
     font-size: 62.5%;
@@ -16,6 +17,12 @@ body {
     font-size: 1.6rem;
     letter-spacing: 0.3px;
     font-family: "Lato", sans-serif;
+}
+.preload * {
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
 }
 /* ============ Common ============= */
 .content {
@@ -26,6 +33,9 @@ a {
     text-decoration: none;
     color: #fff;
     text-transform: uppercase;
+}
+img {
+    vertical-align: middle;
 }
 .title {
     font-size: 6rem;
@@ -38,7 +48,7 @@ a {
 .album-area,
 .event-area,
 .recruit-erea {
-    padding: 100px 0 0;
+    padding: 160px 0 0;
 }
 /* slick slider  */
 .image img {
@@ -157,6 +167,9 @@ a {
     background-color: #fff;
     box-shadow: 0px 2px 10px #7b7878;
 }
+.sticky .content {
+    height: 80px;
+}
 .sticky a {
     color: #000;
 }
@@ -182,10 +195,12 @@ a {
 }
 .navbar li {
     font-size: 1.3rem;
-    padding: 30px 15px;
     font-weight: 700;
     letter-spacing: 2px;
     cursor: pointer;
+}
+.navbar .nav-links a {
+    padding: 30px 15px;
 }
 .navbar li:hover a {
     color: var(--primary-color);
@@ -199,7 +214,7 @@ a {
     background-image: url(../img/trangchủ/bg-Home.jpg);
     background-size: cover;
     height: 100vh;
-    transform: translateY(-116px);
+    transform: translateY(-103px);
 }
 .Home-page::before {
     background-color: rgba(0, 0, 0, 0);
@@ -280,8 +295,8 @@ a {
     background-size: contain;
     background-attachment: scroll;
     font-size: 1.5rem;
-    margin-top: -116px;
-    padding: 60px 0;
+    margin-top: -103px;
+    padding: 130px 0 30px;
     position: relative;
 }
 .about-area::after {
@@ -342,7 +357,6 @@ a {
 /* ============ Menu content ============= */
 .menu-area {
     text-align: center;
-    margin-top: 30px;
 }
 .menu-area h2 {
     margin-bottom: 20px;
@@ -413,16 +427,15 @@ a {
 .event-area .event-lists {
     display: flex;
     flex-wrap: wrap;
-    width: 1230px;
     margin-top: 30px;
 }
 .event-item {
-    margin: 0 10px 30px;
+    width: calc(100% / 3 - 10px);
+    margin: 0 5px 30px;
     position: relative;
 }
 .event-item img {
-    width: calc(1170px / 3);
-    height: 500px;
+    width: 100%;
     object-fit: cover;
     border-radius: 12px;
 }
@@ -441,7 +454,7 @@ a {
     top: 0;
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 10px;
     border-radius: 12px;
     background-color: rgba(16, 13, 34, 0.8);
     color: #fff;
@@ -551,7 +564,7 @@ a {
     z-index: 1;
 }
 .footer .footer-top {
-    padding: 100px 0;
+    padding: 100px 0 20px;
 }
 .footer-top .footer-logo {
     text-align: center;
@@ -589,18 +602,32 @@ a {
 }
 .footer .row {
     overflow: hidden;
-    /* padding: 40px 0; */
-    padding-bottom: 40px;
+    padding: 20px 0;
 }
 .row .footer-copyright {
     float: right;
 }
+/* ============ zalo call ============= */
+.zalo-call-action {
+    position: fixed;
+    background-color: transparent;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    z-index: 100000 !important;
+    right: 24px;
+    bottom: 60px;
+}
+.zalo-call-action img {
+    width: 100%;
+}
+
 /* ============ booking ============= */
 #booking {
     margin: 30px 0;
 }
 .booking {
-    background-color: rgba(0, 0, 0, 0.8);
+    background-color: rgba(0, 0, 0);
     position: sticky;
     top: 0;
 }

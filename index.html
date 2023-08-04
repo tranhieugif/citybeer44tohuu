@@ -34,7 +34,7 @@
             href="./asset/themify-icons-font/themify-icons/themify-icons.css"
         />
     </head>
-    <body>
+    <body class="preload">
         <header class="header1">
             <!-- Top bar -->
             <div class="top-bar">
@@ -77,7 +77,7 @@
                         />
                     </a>
                     <!-- Navigation -->
-                    <ul>
+                    <ul class="nav-links">
                         <li>
                             <a href="#home-page">Trang Chủ</a>
                         </li>
@@ -903,12 +903,18 @@
                 </div>
             </div>
         </footer>
+        <div class="zalo-call-action">
+            <a href="https://zalo.me/0767757575" title="chat zalo: 0767757575">
+                <div>
+                    <img src="./asset/img/zalo.png" alt="" />
+                </div>
+            </a>
+        </div>
         <!-- Messenger Plugin chat Code -->
         <div id="fb-root"></div>
 
         <!-- Your Plugin chat code -->
         <div id="fb-customer-chat" class="fb-customerchat"></div>
-
         <script>
             var chatbox = document.getElementById("fb-customer-chat");
             chatbox.setAttribute("page_id", "110080165509946");
