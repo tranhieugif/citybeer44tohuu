@@ -611,12 +611,12 @@ img {
 .zalo-call-action {
     position: fixed;
     background-color: transparent;
-    width: 70px;
-    height: 70px;
+    width: 55px;
+    height: 55px;
     cursor: pointer;
     z-index: 100000 !important;
     right: 24px;
-    bottom: 60px;
+    bottom: 93px;
 }
 .zalo-call-action img {
     width: 100%;
