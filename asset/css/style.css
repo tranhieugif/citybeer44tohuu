@@ -630,6 +630,7 @@ img {
     background-color: rgba(0, 0, 0);
     position: sticky;
     top: 0;
+    height: 110px;
 }
 .booking .navbar::after {
     background-color: rgba(0, 0, 0, 0);
