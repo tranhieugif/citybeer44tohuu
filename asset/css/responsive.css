@@ -118,14 +118,21 @@
 /* Mobile */
 @media screen and (max-width: 767px) {
     .title {
-        font-size: 5rem;
+        font-size: 4.2rem;
     }
     .slick-dots {
         gap: 0 10px;
     }
+    .top-bar .cell-number {
+        font-size: 1.2rem;
+    }
+    .top-bar .social-link {
+        width: 30px;
+        height: 30px;
+    }
     .menu-drawer {
         inset: 0 0 0 50%;
-        padding: 45px;
+        padding: 40px;
     }
     .heading-title .title {
         font-size: 2.2rem;
@@ -139,12 +146,15 @@
     .about-area .title {
         font-size: 5.5rem;
     }
+    .about-area .about-content {
+        margin: 0 4px;
+    }
     .about-us-video iframe {
         width: 250px;
         height: 150px;
     }
     .event-item {
-        width: calc(100% - 40px);
+        width: calc(100% - 20px);
     }
     .recruit-item {
         flex-direction: column;
@@ -164,5 +174,8 @@
     }
     .footer-address .map {
         width: 95%;
+    }
+    .row .footer-copyright {
+        font-size: 1.4rem;
     }
 }
