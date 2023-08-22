@@ -5,19 +5,19 @@ const hiddenImages = document.querySelector(".hidden-imgs");
 let isHidden = true;
 
 function toggleImages() {
-  // Kiểm tra trạng thái hiện tại của ảnh
-  if (isHidden) {
-    // Nếu ảnh đang ẩn, hiển thị các ảnh trong phần "Xem thêm"
-    hiddenImages.style.display = "flex";
-    viewMoreButton.innerText = "Ẩn bớt";
-  } else {
-    // Nếu ảnh đang hiển thị, ẩn các ảnh trong phần "Xem thêm"
-    hiddenImages.style.display = "none";
-    viewMoreButton.innerText = "Xem thêm";
-  }
+    // Kiểm tra trạng thái hiện tại của ảnh
+    if (isHidden) {
+        // Nếu ảnh đang ẩn, hiển thị các ảnh trong phần "Xem thêm"
+        hiddenImages.style.display = "flex";
+        viewMoreButton.innerText = "Ẩn bớt";
+    } else {
+        // Nếu ảnh đang hiển thị, ẩn các ảnh trong phần "Xem thêm"
+        hiddenImages.style.display = "none";
+        viewMoreButton.innerText = "Xem thêm";
+    }
 
-  // Đảo ngược trạng thái của ảnh
-  isHidden = !isHidden;
+    // Đảo ngược trạng thái của ảnh
+    isHidden = !isHidden;
 }
 
 viewMoreButton.addEventListener("click", toggleImages);

@@ -12,15 +12,34 @@ $(document).ready(function () {
         prevArrow: `<button type='button' class='slick-prev slick-arrow ti-angle-left'></button>`,
         nextArrow: `<button type='button' class='slick-next slick-arrow ti-angle-right'></button>`,
         dots: true,
+        responsive: [
+            {
+                breakpoint: 991,
+                settings: {
+                    slidesToShow: 2,
+                },
+            },
+            {
+                breakpoint: 766,
+                settings: {
+                    slidesToShow: 1,
+                },
+            },
+        ],
     });
 });
 // When the user scrolls the page, execute myFunction
 window.onscroll = function () {
     myFunction();
 };
+let getNav = function () {
+    if (screen.width <= 991) {
+        return "nav-mobile";
+    } else return "navbar";
+};
 
 // Get the navbar
-var navbar = document.getElementById("navbar");
+var navbar = document.getElementById(getNav());
 
 // Get the offset position of the navbar
 var sticky = navbar.offsetTop;
@@ -36,3 +55,8 @@ function myFunction() {
 $(window).load(function () {
     $("body").removeClass("preload");
 });
+const pcNav = document.querySelector(".nav-links");
+const mobileNav = document.querySelector(".mobile-links");
+
+// Copy from PC nav -> Mobile nav
+mobileNav.innerHTML = pcNav.innerHTML;

@@ -18,16 +18,19 @@
             href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
             rel="stylesheet"
         />
-        <!-- Reset css -->
-        <link rel="stylesheet" href="./asset/css/reset.css" />
         <!-- slider -->
         <link
             rel="stylesheet"
             type="text/css"
             href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
         />
+        <!-- Reset css -->
+        <link rel="stylesheet" href="./asset/css/reset.css" />
+
         <!-- Style css -->
         <link rel="stylesheet" href="./asset/css/style.css" />
+        <!-- Responsive css -->
+        <link rel="stylesheet" href="./asset/css/responsive.css" />
         <!-- Icons -->
         <link
             rel="stylesheet"
@@ -36,9 +39,9 @@
     </head>
     <body class="preload">
         <header class="header1">
-            <!-- Top bar -->
-            <div class="top-bar">
-                <div class="content">
+            <div class="content">
+                <!-- Top bar -->
+                <div class="top-bar">
                     <div class="cell-number">
                         <i class="ti-mobile"></i>
                         <span>Điện Thoại: 076 775 7575</span>
@@ -64,8 +67,8 @@
                         ></a>
                     </div>
                 </div>
+                <div class="separate"></div>
             </div>
-            <div class="separate"></div>
             <!-- Navbar -->
             <nav id="navbar" class="navbar">
                 <div class="content">
@@ -102,6 +105,67 @@
                     </ul>
                 </div>
             </nav>
+        </header>
+        <header class="mobile-header">
+            <div class="content">
+                <!-- Top bar -->
+                <div class="top-bar">
+                    <div class="cell-number">
+                        <i class="ti-mobile"></i>
+                        <span>Điện Thoại: 076 775 7575</span>
+                    </div>
+                    <div class="social">
+                        <a
+                            class="social-link"
+                            href="https://www.facebook.com/44tohuu"
+                            target="_blank"
+                            ><i class="ti-facebook"></i
+                        ></a>
+                        <a
+                            class="social-link"
+                            href="https://www.facebook.com/44tohuu"
+                            target="_blank"
+                            ><i class="ti-twitter"></i
+                        ></a>
+                        <a
+                            class="social-link"
+                            href="https://www.facebook.com/44tohuu"
+                            target="_blank"
+                            ><i class="ti-youtube"></i
+                        ></a>
+                    </div>
+                </div>
+                <div class="separate"></div>
+                <input
+                    type="checkbox"
+                    name=""
+                    id="nav-check"
+                    class="nav-check"
+                    hidden
+                />
+
+                <label for="nav-check" class="nav_overlay"></label>
+                <div class="menu-drawer">
+                    <ul class="mobile-links"></ul>
+                </div>
+                <!-- Navbar_mobile content-->
+                <nav id="nav-mobile" class="nav-mobile">
+                    <div class="content">
+                        <!-- Logo -->
+                        <a class="logo" href="#home-page">
+                            <img
+                                src="./asset/img/trangchủ/logo.png"
+                                alt="City Beer"
+                            />
+                        </a>
+
+                        <!-- Navbar_mobile btn -->
+                        <label for="nav-check" class="navbar-btn"
+                            ><i class="ti-menu"></i
+                        ></label>
+                    </div>
+                </nav>
+            </div>
         </header>
         <main>
             <!-- Home-page -->
@@ -472,6 +536,7 @@
                     <button id="viewMoreButton">Xem thêm</button>
                 </div>
             </section>
+            <!-- Event area -->
             <section class="event-area" id="event-area">
                 <div class="content">
                     <div class="title">
@@ -486,26 +551,19 @@
                                 alt="Phong_Lam"
                             />
                             <div class="event-content">
-                                <h3>
-                                    SPECIAL GUEST: CA SĨ LÃ PHONG LÂM | 13.07 |
-                                    CITYBEER
-                                </h3>
+                                <h3>CA SĨ LÃ PHONG LÂM | 13.07 | CITYBEER</h3>
                                 <p class="event-desc">
-                                    Sự kiện tiếp theo của tháng 7 này để mở màn
-                                    cho mùa hè sôi động tại CITYBEER sẽ là sự
-                                    xuất hiện trở lại của một nam ca sỹ điển
-                                    trai đang được yêu thích nhất hiện nay, CA
-                                    SĨ LÃ PHONG LÂM | 13.07 | Với những bản nhạc
-                                    được nhiều bạn trẻ yêu thích, và nằm top
-                                    trending TikTok và YouTube trong một thời
-                                    gian dài như : “ TUYỆT TÌNH CA | GÃ GIANG HỒ
-                                    | LẠC CHỐN HỒNG TRẦN… “ Sẽ là một đêm nhạc
-                                    tràn ngập các bản nhạc hay, chắc chắn sẽ
-                                    không làm mọi người phải thất vọng Còn chần
-                                    chờ gì nữa mà không đặt bàn ngay bây giờ để
-                                    chọn cho mình vị trí đẹp nhất trong đêm,
-                                    cùng nhau vui hết nấc trong bữa tiệc âm nhạc
-                                    đặc biệt này nào !
+                                    Sự kiện mở màn cho mùa hè sôi động tại
+                                    CITYBEER sẽ là sự xuất hiện của một nam ca
+                                    sỹ điển trai đang được yêu thích nhất hiện
+                                    nay, CA SĨ LÃ PHONG LÂM Với những bản nhạc
+                                    nằm top trending TikTok và YouTube trong một
+                                    thời gian dài như : “ TUYỆT TÌNH CA | GÃ
+                                    GIANG HỒ | LẠC CHỐN HỒNG TRẦN… “ Sẽ là một
+                                    đêm nhạc tràn ngập các bản nhạc hay, Còn
+                                    chần chờ gì nữa mà không đặt bàn ngay bây
+                                    giờ để chọn cho mình vị trí đẹp nhất trong
+                                    đêm !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -516,25 +574,18 @@
                                 alt="Ca Sĩ THÀNH ĐẠT"
                             />
                             <div class="event-content">
-                                <h3>
-                                    Special Guest : Ca Sĩ THÀNH ĐẠT | 07.07 |
-                                    CITYBEER
-                                </h3>
+                                <h3>Ca Sĩ THÀNH ĐẠT | 07.07 | CITYBEER</h3>
                                 <p class="event-desc">
-                                    Sự kiện mở màn tháng 7 này để mở màn cho mùa
-                                    hè sôi động tại CITYBEER sẽ là sự xuất hiện
-                                    của một nam ca sỹ điển trai đang được yêu
-                                    thích nhất hiện nay, Ca sĩ Thành Đạt Với
-                                    những bản nhạc được nhiều bạn trẻ yêu thích,
-                                    và nằm top trending TikTok trong một thời
-                                    gian dài như : “ NGÀY MAI NGƯỜI TA LẤY CHỒNG
-                                    | SAO CŨNG ĐƯỢC… “ Sẽ là một đêm nhạc tràn
-                                    ngập các bản nhạc hay, chắc chắn sẽ không
-                                    làm mọi người phải thất vọng Còn chần chờ gì
-                                    nữa mà không đặt bàn ngay bây giờ để chọn
-                                    cho mình vị trí đẹp nhất trong đêm, cùng
-                                    nhau vui hết nấc trong bữa tiệc âm nhạc đặc
-                                    biệt này nào !
+                                    Sự kiện mùa hè sôi động tại CITYBEER cùng
+                                    với nam ca sỹ đang được yêu thích nhất hiện
+                                    nay, Ca sĩ Thành Đạt Với những bản nhạc được
+                                    nhiều bạn trẻ yêu thích như : “ NGÀY MAI
+                                    NGƯỜI TA LẤY CHỒNG | SAO CŨNG ĐƯỢC… “ Sẽ là
+                                    một đêm nhạc tràn ngập các bản nhạc hay, Còn
+                                    chần chờ gì nữa mà không đặt bàn ngay bây
+                                    giờ để chọn cho mình vị trí đẹp nhất trong
+                                    đêm, cùng nhau vui hết nấc trong bữa tiệc âm
+                                    nhạc đặc biệt này nào !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -545,20 +596,15 @@
                                 alt="dj tien moon"
                             />
                             <div class="event-content">
-                                <h3>
-                                    SPECIAL GUEST: DJ TIÊN MOON | 02.07 |
-                                    CITYBEER
-                                </h3>
+                                <h3>DJ TIÊN MOON | 02.07 | CITYBEER</h3>
                                 <p class="event-desc">
                                     Nét âm nhạc mà TIÊN MOON mang đến CITYBEER
                                     đã để lại ấn tượng lớn đối với quý khách
                                     hàng và đó là lí do trở lại lần này. Với
                                     những bản nhạc được phối mới lạ và độc đáo,
-                                    được nhiều bạn trẻ yêu thích, và nằm top
-                                    trending Diijam và SoundCloud trong thời
-                                    gian dài. Sẽ là một đêm nhạc tràn ngập các
-                                    bản nhạc hay, chắc chắn sẽ không làm mọi
-                                    người phải thất vọng Còn chần chờ gì nữa mà
+                                    nằm top trending Diijam và SoundCloud trong
+                                    thời gian dài. Sẽ là một đêm nhạc tràn ngập
+                                    các bản nhạc hay, Còn chần chờ gì nữa mà
                                     không đặt bàn ngay bây giờ để chọn cho mình
                                     vị trí đẹp nhất trong đêm, cùng nhau vui hết
                                     nấc trong bữa tiệc âm nhạc đặc biệt này nào
@@ -574,26 +620,21 @@
                             />
                             <div class="event-content">
                                 <h3>
-                                    SPECIAL GUEST: CA SĨ CHU BIN || CA SĨ NHUNG
-                                    BABE | 29.06 | CITYBEER
+                                    CA SĨ CHU BIN || CA SĨ NHUNG BABE | 29.06 |
+                                    CITYBEER
                                 </h3>
                                 <p class="event-desc">
-                                    Sự kiện cuối cùng trong tháng 6 này để mở
-                                    màn cho mùa hè sôi động tại CITYBEER sẽ là
-                                    sự xuất hiện của một nam ca sỹ điển trai
-                                    đang được yêu thích nhất hiện nay, CA SĨ CHU
-                                    BIN | và một nữ ca sĩ xinh đẹp đang được
-                                    nhiều khán giả chú ý | CA SĨ NHUNG BABE Với
-                                    những bản nhạc được nhiều bạn trẻ yêu thích,
-                                    và nằm top trending TikTok trong một thời
-                                    gian dài như : “ PHỐ HOA LỆ | GIẢ VỜ THƯƠNG
-                                    ANH ĐƯỢC KHÔNG| NGƯỜI TỪNG THƯƠNG…” Sẽ là
-                                    một đêm nhạc tràn ngập các bản nhạc hay,
-                                    chắc chắn sẽ không làm mọi người phải thất
-                                    vọng Còn chần chờ gì nữa mà không đặt bàn
-                                    ngay bây giờ để chọn cho mình vị trí đẹp
-                                    nhất trong đêm, cùng nhau vui hết nấc trong
-                                    bữa tiệc âm nhạc đặc biệt này nào !
+                                    Sự kiện cuối cùng trong tháng 6 này tại
+                                    CITYBEER sẽ là sự xuất hiện của một nam ca
+                                    sỹ điển trai , CA SĨ CHU BIN | và một nữ ca
+                                    sĩ xinh đẹp đang được nhiều khán giả chú ý |
+                                    CA SĨ NHUNG BABE Với những bản nhạc nằm top
+                                    trending TikTok trong một thời gian dài như
+                                    : “ PHỐ HOA LỆ | GIẢ VỜ THƯƠNG ANH ĐƯỢC
+                                    KHÔNG| NGƯỜI TỪNG THƯƠNG…” Sẽ là một đêm
+                                    nhạc tràn ngập các bản nhạc hay, Còn chần
+                                    chờ gì nữa mà không đặt bàn ngay bây giờ để
+                                    chọn cho mình vị trí đẹp nhất trong đêm!
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -605,23 +646,20 @@
                             />
                             <div class="event-content">
                                 <h3>
-                                    SPECIAL GUEST: CA SĨ NGUYỄN THÁI HỌC | 03.06
-                                    | CITYBEER
+                                    CA SĨ NGUYỄN THÁI HỌC | 03.06 | CITYBEER
                                 </h3>
                                 <p class="event-desc">
-                                    Sự kiện tiếp theo trong tháng 6 này để mở
-                                    màn cho mùa hè sôi động tại CITYBEER sẽ là
-                                    sự trở lại của một nam ca sĩ đang được yêu
-                                    thích nhất hiện nay, Với những bản nhạc được
-                                    nhiều bạn trẻ yêu thích, và nằm top trending
-                                    TikTok trong một thời gian dài như : “ NGOÀI
-                                    30| EM LÀ CON THUYỀN CÔ ĐƠN| LỠ HẸN VỚI DÒNG
-                                    LAM… “ Sẽ là một đêm nhạc tràn ngập các bản
-                                    nhạc hay, chắc chắn sẽ không làm mọi người
-                                    phải thất vọng Còn chần chờ gì nữa mà không
-                                    đặt bàn ngay bây giờ để chọn cho mình vị trí
-                                    đẹp nhất trong đêm, cùng nhau vui hết nấc
-                                    trong bữa tiệc âm nhạc đặc biệt này nào !
+                                    Sự kiện tiếp theo trong tháng 6 này tại
+                                    CITYBEER sẽ là sự trở lại của một nam ca sĩ
+                                    đang được yêu thích nhất hiện nay, Với những
+                                    bản nhạc được nhiều bạn trẻ yêu thích như :
+                                    “ NGOÀI 30| EM LÀ CON THUYỀN CÔ ĐƠN| LỠ HẸN
+                                    VỚI DÒNG LAM… “ Sẽ là một đêm nhạc tràn ngập
+                                    các bản nhạc hay, Còn chần chờ gì nữa mà
+                                    không đặt bàn ngay bây giờ để chọn cho mình
+                                    vị trí đẹp nhất trong đêm, cùng nhau vui hết
+                                    nấc trong bữa tiệc âm nhạc đặc biệt này nào
+                                    !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -632,23 +670,18 @@
                                 alt="ngan 98"
                             />
                             <div class="event-content">
-                                <h3>
-                                    SPECIAL GUEST: DJ NGÂN98 |30.05| CITYBEER
-                                </h3>
+                                <h3>DJ NGÂN98 |30.05| CITYBEER</h3>
                                 <p class="event-desc">
-                                    Sự kiện tiếp theo trong tháng 5 này để mở
-                                    màn cho mùa hè sôi động tại CITYBEER sẽ là
-                                    sự trở lại của một nữ đang được yêu thích
-                                    nhất hiện nay, DJ NGÂN98 |30.05| Với những
-                                    bản nhạc được phối mới lạ và độc đáo, được
-                                    nhiều bạn trẻ yêu thích, và nằm top trending
-                                    trong thời gian dài. Sẽ là một đêm nhạc tràn
-                                    ngập các bản nhạc hay, chắc chắn sẽ không
-                                    làm mọi người phải thất vọng Còn chần chờ gì
-                                    nữa mà không đặt bàn ngay bây giờ để chọn
-                                    cho mình vị trí đẹp nhất trong đêm, cùng
-                                    nhau vui hết nấc trong bữa tiệc âm nhạc đặc
-                                    biệt này nào !
+                                    Sự kiện tiếp theo trong tháng 5 này tại
+                                    CITYBEER sẽ là sự trở lại của một nữ DJ đang
+                                    được yêu thích nhất hiện nay, DJ NGÂN98 Với
+                                    những bản nhạc được phối mới lạ và độc đáo,
+                                    nằm top trending trong thời gian dài. Sẽ là
+                                    một đêm nhạc tràn ngập các bản nhạc hay,
+                                    cCòn chần chờ gì nữa mà không đặt bàn ngay
+                                    bây giờ để chọn cho mình vị trí đẹp nhất
+                                    trong đêm, cùng nhau vui hết nấc trong bữa
+                                    tiệc âm nhạc đặc biệt này nào !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -659,25 +692,19 @@
                                 alt="ca si nguyen dinh vu"
                             />
                             <div class="event-content">
-                                <h3>
-                                    SPECIAL GUEST: CA SĨ NGUYỄN ĐÌNH VŨ
-                                    |24.05|CITYBEER
-                                </h3>
+                                <h3>CA SĨ NGUYỄN ĐÌNH VŨ |24.05|CITYBEER</h3>
                                 <p class="event-desc">
-                                    Sự kiện tiếp theo trong tháng 5 này để mở
-                                    màn cho mùa hè sôi động tại CITYBEER sẽ là
-                                    sự trở lại của một nam ca sĩ đang được yêu
-                                    thích nhất hiện nay, Nguyễn Đình Vũ |24.05|
-                                    Với những bản nhạc được nhiều bạn trẻ yêu
-                                    thích, và nằm top trending TikTok trong một
-                                    thời gian dài như : “ KÌ VỌNG SAI LẦM | EM
-                                    CỦA QUÁ KHỨ | CHÚNG TA DỪNG LẠI Ở ĐÂY THÔI…
-                                    “ Sẽ là một đêm nhạc tràn ngập các bản nhạc
-                                    hay, chắc chắn sẽ không làm mọi người phải
-                                    thất vọng Còn chần chờ gì nữa mà không đặt
-                                    bàn ngay bây giờ để chọn cho mình vị trí đẹp
-                                    nhất trong đêm, cùng nhau vui hết nấc trong
-                                    bữa tiệc âm nhạc đặc biệt này nào !
+                                    Sự kiện tiếp theo trong tháng 5 này tại
+                                    CITYBEER sẽ là sự trở lại của một nam ca sĩ
+                                    đang được yêu thích nhất hiện nay, Nguyễn
+                                    Đình Vũ Với những bản nhạc được nhiều bạn
+                                    trẻ yêu thích, và nằm top trending TikTok
+                                    trong một thời gian dài như : “ KÌ VỌNG SAI
+                                    LẦM | EM CỦA QUÁ KHỨ | CHÚNG TA DỪNG LẠI Ở
+                                    ĐÂY THÔI… “ Sẽ là một đêm nhạc tràn ngập các
+                                    bản nhạc hay, Còn chần chờ gì nữa mà không
+                                    đặt bàn ngay bây giờ để chọn cho mình vị trí
+                                    đẹp nhất trong đêm !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -688,27 +715,19 @@
                                 alt="dj mie"
                             />
                             <div class="event-content">
-                                <h3>
-                                    SPECIAL GUEST: DJ MIE | 17.05 | CITYBEER |
-                                    HEINEKEN
-                                </h3>
+                                <h3>DJ MIE | 17.05 | CITYBEER | HEINEKEN</h3>
                                 <p class="event-desc">
                                     Sự kiện đặc biệt nhất trong tháng 5 này cùng
-                                    với sự đồng hành cùng nhãn hàng HEINEKEN để
-                                    mở màn cho mùa hè sôi động tại CITYBEER sẽ
-                                    là sự xuất hiện của một nữ dj đang được yêu
-                                    thích nhất hiện nay, một dj góp phần không
-                                    nhỏ vào những bản mix của chương trình rap
-                                    quốc dân RAP VIỆT, DJ MIE | 17.05 | Với
-                                    những bản nhạc được nhiều bạn trẻ yêu thích,
-                                    và nằm top trending TikTok trong một thời
-                                    gian dài. Sẽ là một đêm nhạc tràn ngập các
-                                    bản nhạc hay, chắc chắn sẽ không làm mọi
-                                    người phải thất vọng Còn chần chờ gì nữa mà
-                                    không đặt bàn ngay bây giờ để chọn cho mình
-                                    vị trí đẹp nhất trong đêm, cùng nhau vui hết
-                                    nấc trong bữa tiệc âm nhạc đặc biệt này nào
-                                    !
+                                    với sự đồng hành cùng nhãn hàng HEINEKEN tại
+                                    CITYBEER sẽ là sự xuất hiện của một nữ dj
+                                    đang được yêu thích nhất hiện nay, một dj
+                                    góp phần không nhỏ vào những bản mix của
+                                    chương trình rap quốc dân RAP VIỆT. Sẽ là
+                                    một đêm nhạc tràn ngập các bản nhạc hay, Còn
+                                    chần chờ gì nữa mà không đặt bàn ngay bây
+                                    giờ để chọn cho mình vị trí đẹp nhất trong
+                                    đêm, cùng nhau vui hết nấc trong bữa tiệc âm
+                                    nhạc đặc biệt này nào !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -720,25 +739,20 @@
                             />
                             <div class="event-content">
                                 <h3>
-                                    SPECIAL GUEST: SINGER PHẠM LỊCH & DJ THẢO
-                                    BEBE | 03.05 | CITYBEER X HEINEKEN
+                                    SINGER PHẠM LỊCH & DJ THẢO BEBE | 03.05 |
+                                    CITYBEER X HEINEKEN
                                 </h3>
                                 <p class="event-desc">
-                                    Sự kiện tiếp theo mở màn cho mùa hè sôi động
-                                    tại CITYBEER sẽ là sự xuất hiện của ca sĩ là
-                                    chủ nhân của bản hit LÀ ANH đang hot trên
-                                    MXH TikTok gần đây, ngoài là vũ công thì
-                                    PHẠM LỊCH cũng có một giọng hát cực kì ấn
-                                    tượng ! Cùng với đó là sự xuất hiện của DJ
-                                    THẢO BEBE, một DJ sexy bậc nhất Việt Nam,
-                                    đến với CITYBEER lần này, DJ THẢO BEBE sẽ
-                                    mang đến cho chúng ta những set nhạc cực
-                                    căng, dự báo sẽ là một đêm không ngủ đối với
-                                    các dân chơi cố đô Còn chần chờ gì nữa mà
-                                    không đặt bàn ngay bây giờ để chọn cho mình
-                                    vị trí đẹp nhất trong đêm, cùng nhau vui hết
-                                    nấc trong bữa tiệc âm nhạc đặc biệt này nào
-                                    !
+                                    Sự kiện tiếp theo sôi động tại CITYBEER sẽ
+                                    là sự xuất hiện của chủ nhân bản hit LÀ ANH
+                                    đang hot trên MXH TikTok gần đây, Cùng với
+                                    đó là sự xuất hiện của DJ THẢO BEBE, đến với
+                                    CITYBEER lần này, DJ THẢO BEBE sẽ mang đến
+                                    cho chúng ta những set nhạc cực căng, dự báo
+                                    sẽ là một đêm không ngủ đối với các dân chơi
+                                    cố đô Còn chần chờ gì nữa mà không đặt bàn
+                                    ngay bây giờ để chọn cho mình vị trí đẹp
+                                    nhất trong đêm !
                                 </p>
                                 <p>ĐẶC BIỆT : KHÔNG PHỤ THU</p>
                             </div>
@@ -746,6 +760,7 @@
                     </div>
                 </div>
             </section>
+            <!-- Recruit area -->
             <section class="recruit-erea" id="recruit-erea">
                 <div class="content">
                     <div class="title">
@@ -856,10 +871,11 @@
                                 >
                             </p>
                         </div>
+                        <!-- Map -->
                         <div class="map">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3826.2352476788615!2d107.6023003739021!3d16.46362162876155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3141a181ef225a39%3A0xbd35406ef47fbd55!2sCity%20beer!5e0!3m2!1svi!2s!4v1690201298878!5m2!1svi!2s"
-                                width="540"
+                                width="100%"
                                 height="250"
                                 style="border: 0"
                                 allowfullscreen=""
