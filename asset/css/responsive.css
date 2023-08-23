@@ -147,7 +147,7 @@
         font-size: 5.5rem;
     }
     .about-area .about-content {
-        margin: 0 4px;
+        width: calc(100% - 6px);
     }
     .about-us-video iframe {
         width: 250px;
@@ -177,5 +177,25 @@
     }
     .row .footer-copyright {
         font-size: 1.4rem;
+    }
+    /* booking */
+    #booking .title {
+        font-size: 2.4rem;
+    }
+    #booking .info-title {
+        margin-left: 27px;
+    }
+    #booking .customer-details {
+        width: calc(100% - 15px);
+        padding: 0 20px;
+    }
+    #booking .customer-phone-address-wrap {
+        flex-direction: column;
+    }
+    #booking .back-to-order {
+        padding: 10px 5px;
+    }
+    #booking .booking-action {
+        padding: 10px;
     }
 }
