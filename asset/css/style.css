@@ -260,10 +260,6 @@ img {
     width: 100%;
     z-index: -1;
 }
-.Home-page .content {
-    position: relative;
-    margin: 0 auto;
-}
 
 /* ============ Heading title ============= */
 .heading-title .content {
@@ -271,6 +267,8 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    position: relative;
+    margin: 0 auto;
     color: #fff;
     width: 100%;
     height: 100vh;
@@ -291,18 +289,39 @@ img {
     font-size: 6.5rem;
     font-weight: 500;
 }
-.heading-title button {
-    display: block;
-    margin-top: 15px;
-    padding: 15px 20px;
-    font-size: 2rem;
-    background-color: var(--primary-color);
-    color: #fff;
-    text-align: center;
+.quality-intro {
+    position: absolute;
+    bottom: 50px;
+    width: 1170px;
+    max-width: 100%;
+}
+.quality-intro-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.quality-intro-item {
+    display: flex;
+    align-items: center;
+    margin: 0 30px;
+}
+.box-img {
+    padding: 0 20px 0 0;
+}
+.box-img img {
+    width: 80px;
+}
+.box-info h4 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+.box-info p {
+    margin: 0;
+    font-size: 1.4rem;
+    color: var(--primary-color);
     text-transform: uppercase;
-    border-radius: 6px;
-
-    cursor: pointer;
+    font-weight: 600;
 }
 /* ============ About area ============= */
 .about-area {
@@ -542,6 +561,115 @@ img {
     text-decoration: underline;
     text-transform: capitalize;
 }
+/* ===================== Customer review ====================*/
+.customer-reviews {
+    background: center / cover no-repeat;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(245, 245, 245, 0.6) 0%,
+            rgba(250, 250, 250, 0.6) 100%
+        ),
+        url(../img/customer/customer-review.jpg);
+    padding: 40px 0 65px;
+}
+
+.customer-reviews .title {
+    color: var(--primary-color);
+    font-family: "Exo 2", sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    text-align: center;
+}
+
+.customer-reviews .feedback {
+    text-align: center;
+}
+
+.customer-reviews .feedback-body {
+    margin-top: 140px;
+}
+
+.customer-reviews .feedback-img {
+    margin: 25px auto 0;
+}
+
+.customer-reviews .feedback-img img {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.customer-reviews .feedback .feedback-content {
+    display: block;
+    width: 750px;
+    max-width: 100%;
+    margin: auto;
+    font-size: 14px;
+    color: #333;
+}
+
+.customer-reviews .feedback p {
+    font-size: 1.6rem;
+    line-height: 1.7;
+    font-style: italic;
+    color: #000;
+}
+
+.customer-reviews .feedback .customer {
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1.6rem;
+}
+
+.customer-reviews .customer .name {
+    font-weight: 700;
+}
+.customer-reviews .customer .company {
+    margin-top: 10px;
+    padding: 2px 0;
+}
+
+.slick-arrow-feedback {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background-color: transparent;
+    opacity: 0.6;
+    padding: 20px;
+    font-size: 2rem;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.slick-arrow-feedback:hover {
+    color: var(--primary-color);
+}
+
+.customer-reviews .feedback-body .slick-prev {
+    left: 0;
+}
+
+.customer-reviews .feedback-body .slick-next {
+    right: 0;
+}
+.customer-review-call-action {
+    float: left;
+    font-size: 1.4rem;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: var(--primary-color);
+    border-radius: 6px;
+}
+.customer-review-call-action a {
+    color: #fff;
+    text-transform: capitalize;
+}
 /* ============ Footer ============= */
 .footer {
     background-image: url(../img/footer.jpg);
@@ -633,6 +761,28 @@ img {
 }
 .row .footer-copyright {
     float: right;
+}
+/* ============ booking call action ============= */
+
+.booking-call-action {
+    position: fixed;
+    background-color: transparent;
+    width: 102px;
+    right: -30px;
+    bottom: 396px;
+    transform: rotate(-90deg);
+    z-index: 4;
+}
+.booking-call-action button {
+    font-size: 1.8rem;
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
 }
 /* ============ zalo call ============= */
 .zalo-call-action {

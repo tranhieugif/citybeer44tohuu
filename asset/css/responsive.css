@@ -7,6 +7,12 @@
         display: block;
     }
 }
+@media screen and (min-width: 991px) and (max-width: 1025px) {
+    .quality-intro-item {
+        margin: 0 5px;
+    }
+}
+
 /* Tablet & mobile */
 @media screen and (max-width: 991px) {
     .sticky .navbar-btn {
@@ -72,9 +78,7 @@
     .top-bar .content {
         padding: 0;
     }
-    .heading-title button {
-        padding: 10px 15px;
-    }
+
     .img-album a {
         width: calc(100% / 2);
     }
@@ -94,7 +98,12 @@
     .heading-title h1 {
         font-size: 3.5rem;
     }
-
+    .quality-intro-list {
+        row-gap: 15px;
+    }
+    .box-img img {
+        width: 60px;
+    }
     .about-area .title {
         font-size: 6rem;
     }
@@ -135,13 +144,23 @@
         padding: 40px;
     }
     .heading-title .title {
-        font-size: 2.2rem;
+        font-size: 3rem;
     }
     .heading-title h1 {
         font-size: 2rem;
     }
     .heading-title button {
         font-size: 1.6rem;
+    }
+    .quality-intro-list {
+        flex-direction: column;
+        row-gap: 10px;
+    }
+    .box-img img {
+        width: 45px;
+    }
+    .box-info h4 {
+        font-size: 2.2rem;
     }
     .about-area .title {
         font-size: 5.5rem;
@@ -177,6 +196,9 @@
     }
     .row .footer-copyright {
         font-size: 1.4rem;
+    }
+    .booking-call-action button {
+        font-size: 1.5rem;
     }
     /* booking */
     #booking .title {
